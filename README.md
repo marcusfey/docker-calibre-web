@@ -146,8 +146,8 @@ Containers are configured using parameters passed at runtime (such as those abov
 | `-e TZ=Etc/UTC` | specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List). |
 | `-e DOCKER_MODS=linuxserver/mods:universal-calibre` | #optional & **x86-64 only** Adds the ability to perform ebook conversion |
 | `-e OAUTHLIB_RELAX_TOKEN_SCOPE=1` | Optionally set this to allow Google OAUTH to work |
-| `-v /config` | Where calibre-web stores the internal database and config. |
-| `-v /books` | Where your preexisting calibre database is located. |
+| `-v /config` | Directory where calibre-web stores the internal database and config. Host directory can be empty. |
+| `-v /books` | Directory where your preexisting calibre database is located (possibly get one [here](https://raw.githubusercontent.com/janeczku/calibre-web/master/library/metadata.db)) and any uploaded media will be stored later on. |
 
 ## Environment variables from files (Docker secrets)
 
